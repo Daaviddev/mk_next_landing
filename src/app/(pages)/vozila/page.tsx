@@ -73,7 +73,20 @@ const Vozila = () => {
     }
 
     setFilteredCars(filtered);
-  }, [selectedMake, mileageRange, yearRange, selectedEngine, fetchedCars]);
+
+    for (const car of filteredCars) {
+      if (car.listing.car.gear === 'Mehanički mjenjač') {
+        car.listing.car.gear = 'Mehanički';
+      }
+    }
+  }, [
+    selectedMake,
+    mileageRange,
+    yearRange,
+    selectedEngine,
+    fetchedCars,
+    filteredCars,
+  ]);
 
   return (
     <main>
