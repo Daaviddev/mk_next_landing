@@ -18,7 +18,7 @@ interface CarCardProps {
   sold: boolean;
 }
 
-const CarCard: React.FC<CarCardProps> = ({
+const FeaturedCarCard: React.FC<CarCardProps> = ({
   link,
   name,
   image,
@@ -39,7 +39,7 @@ const CarCard: React.FC<CarCardProps> = ({
 
   return (
     <div
-      className={`relative bg-gradient-to-b from-white/10 to-transparent border backdrop-blur-lg rounded-xl border-white/20 shadow-lg shadow-black p-5 text-center text-white transition-transform duration-300 w-full  max-w-[350px] lg:w-[300px] min-w-[200px] ${
+      className={`relative bg-gradient-to-b from-white/10 to-transparent border backdrop-blur-lg rounded-xl border-white/20 shadow-lg shadow-black p-5 text-center text-white transition-transform duration-300 w-full lg:w-[300px] min-w-[200px] ${
         sold ? 'cursor-not-allowed' : 'cursor-pointer'
       }`}
       onClick={handleClick}
@@ -97,4 +97,4 @@ const CarCard: React.FC<CarCardProps> = ({
   );
 };
 
-export default CarCard;
+export default FeaturedCarCard;

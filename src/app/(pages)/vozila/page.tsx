@@ -3,6 +3,7 @@
 
 import React, { useEffect, useState } from 'react';
 import CarCard from '@/components/sections/featured_car_card';
+import FeaturedCarCard from '@/components/sections/featured_car_card list';
 
 const Vozila = () => {
   const [fetchedCars, setFetchedCars] = useState<any[]>([]);
@@ -185,7 +186,7 @@ const Vozila = () => {
           {/* Car Listings Section */}
           <div className="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 p-5 xl:grid-cols-4 text-gray-100 bg-opacity-50 bg-[rgba(23,26,33,0.05)] backdrop-blur-md border border-gray-300/10 shadow-black shadow-lg rounded-xl">
             {filteredCars.map((automobile) => (
-              <CarCard
+              <FeaturedCarCard
                 key={automobile.listing.id}
                 name={automobile.listing.title}
                 price={automobile.listing.price}

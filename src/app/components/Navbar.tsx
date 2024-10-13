@@ -48,17 +48,6 @@ function Navbar() {
           <Image src={logo} alt="MKAutomobili Logo" width={180} height={35} />
         </a>
 
-        {/* Desktop Menu */}
-        <ul>
-          {/* <li>
-            {' '}
-            <a href="/" className="text-gray-100 text-lg font-bold">
-              Ponuda Vozila
-            </a>
-          </li> */}
-          {/* Add more links as needed */}
-        </ul>
-
         {/* Button */}
         <NjuskaloButton />
 
@@ -66,7 +55,7 @@ function Navbar() {
         <ul
           className={`${
             isActive ? 'left-0 block' : '-left-full hidden'
-          } fixed top-16 left-0 w-full h-screen bg-opacity-80 bg-[rgba(23,26,33,0.8)] backdrop-blur-xl flex flex-col items-center justify-center space-y-6 transition-all duration-500 md:hidden`}
+          } fixed top-16 left-0 w-full h-screen bg-black backdrop-blur-xl flex flex-col items-center justify-center space-y-6 transition-all duration-500 md:hidden`}
         >
           <li className="w-full flex px-5">
             <a
