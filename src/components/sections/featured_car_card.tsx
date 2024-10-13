@@ -63,7 +63,7 @@ const CarCard: React.FC<CarCardProps> = ({
       />
       <h3 className="truncate text-lg font-semibold mb-2">{name}</h3>
       <div className="flex justify-center bg-white/5  items-center py-2 px-4 rounded-xl mb-4 text-gray-100 shadow-sm shadow-black/50">
-        <p className="font-bold text-lg">{price} €</p>
+        <p className="font-bold text-lg">{parseFloat(price).toFixed(3)} €</p>
       </div>
       <div className="grid grid-cols-2 gap-4 text-sm mb-4">
         <div className="flex items-start justify-start gap-2">
